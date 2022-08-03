@@ -1,0 +1,18 @@
+{% extends '_base.html' %}
+
+{% block page_title %}
+    sign up
+{% endblock page_title %}
+
+{% block content %}
+    <dir class="container mt-3">
+        <form action="" method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button class="btn btn-success" type="submit">sign up</button>
+
+
+        </form>
+    </dir>
+
+{% endblock content %}
